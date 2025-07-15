@@ -1,8 +1,11 @@
 # CICD-Pipeline-Using-AWS-Resources
 
 **Problem Statement: **
+
 You are assigned to create a software development life cycle for an application your company has created. The company wants you to use AWS for the infrastructure part and AWS Developer tools for the pipeline part. 
+
 **Tasks to be performed: **
+
 1.	Create a website in any language of your choice and push the code into GitHub 
 2.	Migrate your GitHub repository into the AWS CodeCommit repository 
 3.	Create two CodeDeploy deployments (for the QA stage and the Production stage) with an EC2 deployment group into which you can push the code from the CodeCommit repository 
