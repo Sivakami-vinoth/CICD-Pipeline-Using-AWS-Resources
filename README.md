@@ -4,7 +4,7 @@
 
 You are assigned to create a software development life cycle for an application your company has created. The company wants you to use AWS for the infrastructure part and AWS Developer tools for the pipeline part. 
 
-**Tasks to be performed: **
+## **Tasks to be performed: **
 
 1.	Create a website in any language of your choice and push the code into GitHub 
 2.	Migrate your GitHub repository into the AWS CodeCommit repository 
@@ -17,7 +17,7 @@ d.	Only when the QA stage is successful, the Production stage should execute.
 5.	Create a third stage where the same website is pushed into an Elastic Beanstalk environment
 ---------------------------------------------------------------------------------------------------------------------
 
-# **Step:1 Create a CodeCommit Repository**
+## **Step:1 Create a CodeCommit Repository**
 
 **Login to your AWS manage console**
 
@@ -40,7 +40,7 @@ d.	Only when the QA stage is successful, the Production stage should execute.
 <img width="602" height="287" alt="image" src="https://github.com/user-attachments/assets/ceaf993a-6786-427f-a5e7-9447348baaf7" />
 
 
-**Step:2 Create an IAM user with Administrator Acccess**
+## **Step:2 Create an IAM user with Administrator Acccess**
 
 **Open the IAM services from AWS Management Console**
 
@@ -84,7 +84,7 @@ d.	Only when the QA stage is successful, the Production stage should execute.
 
 <img width="490" height="368" alt="image" src="https://github.com/user-attachments/assets/a7c0cef2-38c3-460b-a21b-770866c12698" />
 
-**Step:3 Create an EC2 Instance**
+## **Step:3 Create an EC2 Instance**
 
 **Login to AWS Management console using the IAM user created**
 
@@ -98,7 +98,7 @@ d.	Only when the QA stage is successful, the Production stage should execute.
 
 <img width="602" height="110" alt="image" src="https://github.com/user-attachments/assets/6ecd603a-2405-465b-ae44-323bcee1309c" />
 
-**Step:4 Copy the content from the Github to a local repository**
+## **Step:4 Copy the content from the Github to a local repository**
 
 **Open the Github account and copy the HTTPS url**
 
@@ -110,7 +110,7 @@ d.	Only when the QA stage is successful, the Production stage should execute.
 
 <img width="602" height="64" alt="image" src="https://github.com/user-attachments/assets/f6ef5dea-3913-405b-bbe3-80d2f383de98" />
 
-**Step:5 Push the contents to the CodeCommit Repository**
+## **Step:5 Push the contents to the CodeCommit Repository**
 
 **Open the CodeCommit and open the repository created**
 
@@ -124,7 +124,7 @@ d.	Only when the QA stage is successful, the Production stage should execute.
 
 <img width="602" height="133" alt="image" src="https://github.com/user-attachments/assets/75ce0f30-dd3b-4f75-8a98-c3bb7d00e76d" />
 
-**Step:6 Check for the Github repository contents in the CodeCommit Repository**
+## **Step:6 Check for the Github repository contents in the CodeCommit Repository**
 
 <img width="602" height="140" alt="image" src="https://github.com/user-attachments/assets/770c00f7-f8fa-4912-b929-3054d41ecff0" />
 
@@ -132,7 +132,7 @@ d.	Only when the QA stage is successful, the Production stage should execute.
 
 **Successfully imported the Github Repository contents to the CodeCommit Repository**
 
-**Step:7 Create an IAM role with permissions policies**
+## **Step:7 Create an IAM role with permissions policies**
 
 **AmazonEC2RoleforAWSCodeDeploy**
 
@@ -150,13 +150,13 @@ d.	Only when the QA stage is successful, the Production stage should execute.
 
 <img width="602" height="175" alt="image" src="https://github.com/user-attachments/assets/73f2c24e-7a31-47ad-abb8-7bfe82e86700" />
 
-**Step:8 Create an EC2 Instance with the IAM Role Created to deploy the application**
+## **Step:8 Create an EC2 Instance with the IAM Role Created to deploy the application**
 
 <img width="602" height="292" alt="image" src="https://github.com/user-attachments/assets/fdcfb0bd-5029-4b7a-b2b8-7c329272d70b" />
 
 <img width="602" height="267" alt="image" src="https://github.com/user-attachments/assets/4dd3feb3-0b0b-46c8-9a3b-40ba0701101f" />
 
-**Step:9 Connect to the EC2 Instance and run the following commands**
+## **Step:9 Connect to the EC2 Instance and run the following commands**
 
 <pre>
 sudo apt update
@@ -173,7 +173,7 @@ sudo service codedeploy-agent status
 
 <img width="602" height="182" alt="image" src="https://github.com/user-attachments/assets/ffa5969f-c697-46cd-baf1-6f30edaf5e3d" />
 
-**Step:10 Create a CodeDeploy Application with the compute platform as EC2**
+## **Step:10 Create a CodeDeploy Application with the compute platform as EC2**
 
 <img width="602" height="215" alt="image" src="https://github.com/user-attachments/assets/7e07caee-64c0-4826-adb8-329659629a31" />
 
@@ -181,7 +181,7 @@ sudo service codedeploy-agent status
 
 <img width="602" height="213" alt="image" src="https://github.com/user-attachments/assets/582220e4-469e-4a78-9089-1892b0f61d24" />
 
-**Step:11 Select the deployment group with the created EC2 Instances**
+## **Step:11 Select the deployment group with the created EC2 Instances**
 
 <img width="602" height="124" alt="image" src="https://github.com/user-attachments/assets/a01d1b0a-98d6-4dde-bf21-2e7d27a04edc" />
 
@@ -211,7 +211,7 @@ sudo service codedeploy-agent status
 
 <img width="602" height="282" alt="image" src="https://github.com/user-attachments/assets/3ee454a5-4e0a-437c-918c-ec21c4453258" />
 
-**Step:12 Create a pipeline using CodePipeline**
+## **Step:12 Create a pipeline using CodePipeline**
 
 <img width="602" height="157" alt="image" src="https://github.com/user-attachments/assets/21894f02-612d-4bde-ab7d-cd52a674181d" />
 
