@@ -17,7 +17,7 @@ d.	Only when the QA stage is successful, the Production stage should execute.
 5.	Create a third stage where the same website is pushed into an Elastic Beanstalk environment
 ---------------------------------------------------------------------------------------------------------------------
 
-**Step:1 Create a CodeCommit Repository**
+# **Step:1 Create a CodeCommit Repository**
 
 **Login to your AWS manage console**
 
